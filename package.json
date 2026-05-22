@@ -1,6 +1,6 @@
 {
   "name": "@krymskyimaksym/react-native-pdf-bitmap",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Render PDF pages to monochrome 1-bit bitmaps for TSPL thermal printers. Uses iOS PDFKit and Android PdfRenderer natively.",
   "main": "src/index.ts",
   "types": "src/index.ts",

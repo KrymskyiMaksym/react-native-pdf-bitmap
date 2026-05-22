@@ -16,7 +16,8 @@ class PdfBitmapModule : Module() {
     AsyncFunction("renderPdfToBitmap") { base64Pdf: String, dpi: Int ->
       val pdfBytes = Base64.decode(base64Pdf, Base64.DEFAULT)
 
-      val tempFile = File.createTempFile("pdf_render_", ".pdf", context.cacheDir)
+      val cacheDir = appContext.reactContext?.cacheDir ?: throw Exception("No react context")
+      val tempFile = File.createTempFile("pdf_render_", ".pdf", cacheDir)
       try {
         tempFile.writeBytes(pdfBytes)
 

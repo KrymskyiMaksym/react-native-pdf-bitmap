@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "android"],
+  "ios": {
+    "modules": ["PdfBitmapModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.pdfbitmap.PdfBitmapModule"]
+  }
+}
